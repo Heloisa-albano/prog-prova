@@ -5,13 +5,28 @@
     Pergunte ao vendedor quantos quantas vendas foram feitas com pagamento A VISTA e quantas foram feitas com pagamento em CARNÊ. Contabilize as vendas pelo seu tipo e também some o preço das vendas A VISTA e das vendas em CARNÊ.
     Ao fim do programa, apresente o Valor total vendido pela Loja. Também apresente a quantidade e o valor das vendas A VISTA e a quantidade e o valor das vendas em CARNÊ.
     */
+    let vendas = parseInt(prompt("Quantas vendas foram feitas no dia?"))
+    let carne = 0;
+    let vista = 0;
+    let venda1 = 0;
+    let venda = 0;
+
     
-    //ENTRADA
+    for (let i = 0; i < vendas; i++) {
+        let vc = prompt("digite A VISTA (V) ou em CARNÊ (C): ").toUpperCase()
+        let valor = Number(prompt("Qual o valor da venda? "))
+        if (vc == "C") {
+            carne++;
+            venda1 = venda1 + valor;
 
+        } else if (vc == "V") {
+            vista++;
+            venda = venda + valor;
+        }
+        
+    }
+    
+    document.write(`total de vendas: ${vendas}</br>Quantidade de vendas a vista ${vista}, Valor das vendas ${venda}</br>Quantidade de vendas em carnê ${carne}, Valor das vendas ${venda1}`)
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
 
 </script>

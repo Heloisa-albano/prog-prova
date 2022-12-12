@@ -5,14 +5,18 @@
     let precoPneus = [299, 390, 349.90, 439.90, 399.90, 389.49];
     No final do programa, peça para apresentar qual foi o pneu mais caro que foi orçado e o pneu mais barato.
     Considerando que deverão ser trocadas os quatro pneus do veículo, apresente também o custo total da compra, baseando-se no preço do pneu mais barato.
+
     */
 
     //ENTRADA
-
+    let precoPneus = [299, 390, 349.90, 439.90, 399.90, 389.49];
 
     //PROCESSAMENTO
-
+   const maior = precoPneus.sort((a, b) => b-a)[0] 
+   const menor = precoPneus.sort((a, b) => a-b)[0] 
+   let pneu = menor * 4
 
     //SAÍDA
+    document.write(`Pneu mais caro: R$${maior}</br>Pneu mais barato: R$${menor}</br>Custo total da compra: R$${pneu}`)
 
 </script>

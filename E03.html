@@ -10,8 +10,21 @@
 
 
     //PROCESSAMENTO
+    let vogais = [];
+    let consoantes = [];
 
 
+    for (let i = 0; i < 10; i++) {
+        let element = prompt("digite uma letra: ").toLowerCase();
+        if (element === "a" || element === "e" || element === "i" || element === "o" || element === "u") {
+            vogais.push(element);
+        
+        } else {
+            consoantes.push(element);
+     
+        }
+    }
     //SAÍDA
+    document.write(`consoantes: ${consoantes}</br>vogais: ${vogais}</br>quantidade de vogais: ${vogais.length}</br>quantidade de consoantes: ${consoantes.length}</br>`)
 
 </script>

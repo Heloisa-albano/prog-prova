@@ -11,11 +11,32 @@
     */
 
     //ENTRADA
-
+    const quant = Number(prompt("Quantas pessoa foram abordadas? "))
 
     //PROCESSAMENTO
+    let h = 0;
+    let m = 0;
+    let maximo = 0;
+    let baixa = 0;
 
+    for (let i = 0; i < quant; i++) {
+        let HouM = prompt("digite Homem (H) ou Mulher (M): ");
+        let nota = Number(prompt("De uma nota de 1/10 para estádio: "))
+        
+        if( HouM === "m"){
+            m++;
+        } else if( HouM === "h"){
+            h++;
+        }
+        if (nota === 10) {
+            maximo++;
+        } else if(nota < 7){
+            baixa++;
+        }
+    }
 
     //SAÍDA
+
+    document.write(`Quantidade de homens: ${h}</br>Quantidade de mulheres: ${m}</br>Notas maximas: ${maximo}</br>Notas baixas: ${baixa}`)
 
 </script>

@@ -9,13 +9,21 @@
     - Investimento Inicial
     - Quantidade de meses necessário para ser duplicado
     */
-
     //ENTRADA
-    
+    let investimentoinicial = Number(prompt("Qual valor do investimento?"));
+    let triplo = investimentoinicial * 3;
+    let meses = 0;
     
     //PROCESSAMENTO
+    for (let i = 0; i === triplo; i++) {
+        let element = 30 * (investimentoinicial + (investimentoinicial * 0.01)) 
+        if (element <= triplo) {
+            meses++
+        }
+    }
 
     
     //SAÍDA
+    document.write(`valor inicial ${investimentoinicial}, Quantidade de meses necessário para ser triplicado ${meses}`)
 
 </script>
